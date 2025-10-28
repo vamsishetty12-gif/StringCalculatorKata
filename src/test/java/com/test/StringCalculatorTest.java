@@ -21,5 +21,11 @@ public class StringCalculatorTest {
 	    assertEquals(1, calc.add("1"));
 	}
 
+	@Test
+	void testTwoNumbersCommaSeparated() {
+	    StringCalculator calculator = new StringCalculator();
+	    assertEquals(3, calculator.add("1,2"));
+	}
+
 
 }
