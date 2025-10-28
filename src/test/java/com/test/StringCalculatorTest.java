@@ -27,5 +27,11 @@ public class StringCalculatorTest {
 	    assertEquals(3, calculator.add("1,2"));
 	}
 
+	@Test
+	void testMultipleNumbersCommaSeparated() {
+	    StringCalculator calculator = new StringCalculator();
+	    assertEquals(10, calculator.add("1,2,3,4"));
+	}
+
 
 }
