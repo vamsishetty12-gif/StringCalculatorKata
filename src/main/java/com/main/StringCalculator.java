@@ -23,8 +23,9 @@ public class StringCalculator {
 	        if (n < 0) {
 	            if (negatives.length() > 0) negatives.append(",");
 	            negatives.append(n);
+	        }else if (n <= 1000) {    
+	            sum += n;
 	        }
-	        sum += n;
 	    }
 
 	    if (negatives.length() > 0) {
